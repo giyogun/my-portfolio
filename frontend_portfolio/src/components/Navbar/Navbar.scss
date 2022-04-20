@@ -17,6 +17,13 @@
   justify-content: flex-start;
   align-items: center;
 
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 900;
+    font-size: 1.7rem;
+    // color: var(--secondary-color);
+  }
+
   img {
     width: 90px;
     height: 20px;
