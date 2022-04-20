@@ -4,37 +4,17 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { client, urlFor } from "../../client";
 import AppWrap from "../../wrapper/AppWrap";
-
-
-// const abouts = [
-//   {
-//     title: "Web Development",
-//     description: "I am a good web developer",
-//     imgUrl: images.about01,
-//   },
-//   {
-//     title: "MERN",
-//     description: "I am a good web developer",
-//     imgUrl: images.about02,
-//   },
-//   {
-//     title: "Redux",
-//     description: "I am a good web developer",
-//     imgUrl: images.about03,
-//   },
-//   {
-//     title: "Full stack",
-//     description: "I am a good web developer",
-//     imgUrl: images.about04,
-//   },
-// ];
+import MotionWrap from "../../wrapper/MotionWrap";
 
 const About = () => {
-  const [abouts, setAbouts] = useState([])
+  const [abouts, setAbouts] = useState([]);
 
-  useEffect(()=>{
-    client.fetch(`*[_type == 'abouts']`).then(data => setAbouts(data)).catch(console.error)
-  })
+  useEffect(() => {
+    client
+      .fetch(`*[_type == 'abouts']`)
+      .then((data) => setAbouts(data))
+      .catch(console.error);
+  }, []);
 
   return (
     <>
@@ -43,7 +23,6 @@ const About = () => {
         <br />
         means <span>Good Business</span>
       </h2>
-
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
@@ -68,4 +47,8 @@ const About = () => {
 };
 
 // export default About;
-export default AppWrap(About, 'about');
+export default AppWrap(
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { client, urlFor } from "../../client";
 import AppWrap from "../../wrapper/AppWrap";
 import ReactToolTip from "react-tooltip";
+import MotionWrap from "../../wrapper/MotionWrap";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
@@ -79,4 +80,8 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);
