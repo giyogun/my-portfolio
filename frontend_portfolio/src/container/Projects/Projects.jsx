@@ -35,7 +35,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        Take a Peak Into
+        Take a Peek At
         <span> My Projects</span>
       </h2>
       <div className="app__work-filter">

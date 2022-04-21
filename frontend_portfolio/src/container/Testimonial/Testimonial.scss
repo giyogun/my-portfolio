@@ -7,7 +7,9 @@
 .app__testimonial-item {
   width: 60%;
   min-height: 320px;
-  background-color: var(--white-color);
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   padding: 2rem;
   border-radius: 15px;
@@ -110,11 +112,9 @@
     svg {
       width: 20px;
       height: 20px;
-      color: var(--secondary-color);
     }
 
     &:hover {
-      // background-color: var(--secondary-color);
       transform: scale(1.2);
     }
   }

@@ -14,7 +14,6 @@ const Testimonial = () => {
   useEffect(() => {
     client.fetch(`*[_type == 'testimonials']`).then((data) => {
       setTestimonials(data);
-      console.log(data);
     });
     client.fetch(`*[_type == 'brands']`).then((data) => {
       setBrands(data);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import { client, urlFor } from "../../client";
 import AppWrap from "../../wrapper/AppWrap";
 import MotionWrap from "../../wrapper/MotionWrap";

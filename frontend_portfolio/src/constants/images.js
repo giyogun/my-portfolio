@@ -33,6 +33,10 @@ import spotify from "../assets/spotify.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 import circle from "../assets/circle.svg";
+import iphone from "../assets/iphone.png";
+import samsung from "../assets/samsung.png";
+import emailsIcon from "../assets/emailsIcon.png";
+import emailIcon1 from "../assets/emailIcon1.png";
 // import about01 from "../assets/about01.png";
 
 export default {
@@ -71,4 +75,8 @@ export default {
   bgIMG,
   bgWhite,
   bolt,
+  iphone,
+  samsung,
+  emailsIcon,
+  emailIcon1
 };
