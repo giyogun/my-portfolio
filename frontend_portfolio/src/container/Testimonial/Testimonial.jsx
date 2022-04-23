@@ -42,6 +42,8 @@ const Testimonial = () => {
 
   return (
     <>
+      <h2 className="head-text">What are they saying?</h2>
+
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
@@ -86,5 +88,5 @@ const Testimonial = () => {
 export default AppWrap(
   MotionWrap(Testimonial, "app__testimonial"),
   "testimonials",
-  "app__primarybg"
+  "app__sitebg"
 );

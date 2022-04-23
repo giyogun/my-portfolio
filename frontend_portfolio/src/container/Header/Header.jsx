@@ -27,7 +27,7 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
+              <p className="p-text">Hello, I'm</p>
               <h1 className="head-text">Godwin</h1>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Header = () => {
         transition={{ duration: 1, delayChildren: 1 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile_bg" />
+        <img src={images.i6} alt="profile_bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}

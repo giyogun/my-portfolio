@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-// import { images } from "../../constants";
 import { client, urlFor } from "../../client";
 import AppWrap from "../../wrapper/AppWrap";
 import MotionWrap from "../../wrapper/MotionWrap";
@@ -19,9 +18,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Know That <span>Good Dev</span>
+        I Love to Use <span>Code</span>
         <br />
-        means <span>Good Business</span>
+        to <span>Solve Problems</span>
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -50,5 +49,5 @@ const About = () => {
 export default AppWrap(
   MotionWrap(About, "app__about"),
   "about",
-  "app__whitebg"
+  "app__altbg"
 );

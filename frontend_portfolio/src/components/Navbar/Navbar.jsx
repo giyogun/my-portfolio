@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-// import { images } from "../../constants";
+import { images } from "../../constants";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import SocialMedia from "../SocialMedia";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -10,10 +13,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h1 className="head-text">
+        {/* <h1 className="head-text">
           GOD<span>WIN</span>
-        </h1>
-        {/* <img src={images.logo} alt="logo" /> */}
+        </h1> */}
+        <img src={images.godwin0} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "projects", "skills", "testimonials", "contact"].map(
@@ -50,6 +53,35 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <aside className="app__soc">
+              <article>
+                <a
+                  href="https://ng.linkedin.com/in/godwin-iyogun-0b0b79160"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsLinkedin />
+                </a>
+              </article>
+              <article>
+                <a
+                  href="https://www.github.com/giyogun"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsGithub />
+                </a>
+              </article>
+              <article>
+                <a
+                  href="https://www.facebook.com/sparks.g.iyogun"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebookF />
+                </a>
+              </article>
+            </aside>
           </motion.div>
         )}
       </div>

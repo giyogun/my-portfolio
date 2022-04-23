@@ -11,6 +11,14 @@
   background-color: var(--primary-color);
 }
 
+.app__altbg {
+  background-color: var(--alt-primary-color);
+}
+
+.app__sitebg {
+  background-color: var(--alt-site-color);
+}
+
 .app__container {
   width: 100%;
   min-height: 100vh;
