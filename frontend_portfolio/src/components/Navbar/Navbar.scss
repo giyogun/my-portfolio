@@ -148,7 +148,7 @@
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: var(--secondary-color);
+            color: var(--alt-site-color);
           }
         }
       }
@@ -156,6 +156,10 @@
 
     @media screen and (min-width: 900px) {
       display: none;
+    }
+
+    @media screen and (min-width: 700px) {
+      background:#363b6e;
     }
   }
 
@@ -195,7 +199,7 @@
       width: 15px;
       height: 15px;
       // color: var(--gray-color);
-      color: #111;
+      color: var(--white-color);
       font-weight: 900;
     }
 

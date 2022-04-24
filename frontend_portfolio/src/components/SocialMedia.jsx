@@ -1,5 +1,5 @@
 import React from "react";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const SocialMedia = () => {
@@ -24,8 +24,8 @@ const SocialMedia = () => {
         </a>
       </div>
       <div>
-        <a href="https://www.facebook.com/sparks.g.iyogun" target="_blank" rel="noreferrer">
-          <FaFacebookF />
+        <a href="https://www.twitter.com/godwin__JS" target="_blank" rel="noreferrer">
+          <BsTwitter />
         </a>
       </div>
     </div>

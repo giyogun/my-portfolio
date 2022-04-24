@@ -37,6 +37,7 @@ import iphone from "../assets/iphone.png";
 import samsung from "../assets/samsung.png";
 import emailIcon1 from "../assets/emailIcon1.png";
 import godwin0 from "../assets/godwin0.png";
+import i6 from "../assets/i6.png";
 
 export default {
   email,
@@ -78,4 +79,5 @@ export default {
   samsung,
   emailIcon1,
   godwin0,
+  i6,
 };

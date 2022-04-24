@@ -4,7 +4,7 @@ import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import SocialMedia from "../SocialMedia";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 
 const Navbar = () => {
@@ -74,11 +74,11 @@ const Navbar = () => {
               </article>
               <article>
                 <a
-                  href="https://www.facebook.com/sparks.g.iyogun"
+                  href="https://www.twitter.com/godwin__JS"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaFacebookF />
+                  <BsTwitter />
                 </a>
               </article>
             </aside>
