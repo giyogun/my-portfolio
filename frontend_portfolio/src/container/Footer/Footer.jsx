@@ -76,9 +76,10 @@ const Footer = () => {
             />
           </div>
           <div>
+            <label htmlFor="message"></label>
             <textarea
               className="p-text"
-              name="message"
+              id="message"
               value={message}
               onChange={handleChangeInput}
             ></textarea>
@@ -92,6 +93,12 @@ const Footer = () => {
           <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
       )}
+      <div className="copyright">
+        <p className="p-text">@2021 GODWIN</p>
+        <p className="p-text" style={{ textTransform: "none" }}>
+          Built with React, Scss and Sanity
+        </p>
+      </div>
     </>
   );
 };

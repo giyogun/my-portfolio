@@ -58,10 +58,10 @@ const Work = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map((work, index) => (
+        {filterWork?.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={urlFor(work.imgUrl).url()} alt={work.name} />
+              <img src={urlFor(work.imgUrl).url()} alt={work.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
@@ -80,6 +80,7 @@ const Work = () => {
                     }}
                     className="app__flex"
                   >
+
                     <AiFillEye />
                   </motion.div>
                 </a>
@@ -92,6 +93,7 @@ const Work = () => {
                     }}
                     className="app__flex"
                   >
+
                     <AiFillGithub />
                   </motion.div>
                 </a>

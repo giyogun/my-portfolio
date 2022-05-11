@@ -9,10 +9,6 @@ const AppWrap = (Component, idName, classNames) =>
         <SocialMedia />
         <div className="app__wrapper app__flex">
           <Component />
-          <div className="copyright">
-            <p className="p-text">@2021 GODWIN</p>
-            <p className="p-text" style={{textTransform: "none"}}>Built with React, Scss and Sanity</p>
-          </div>
         </div>
         <NavigationDots active={idName} />
       </div>

@@ -3,9 +3,7 @@ import { images } from "../../constants";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import SocialMedia from "../SocialMedia";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,10 +11,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        {/* <h1 className="head-text">
-          GOD<span>WIN</span>
-        </h1> */}
-        <img src={images.godwin0} alt="logo" />
+        <img src={images.godwin0} alt="godwin-logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "projects", "skills", "testimonials", "contact"].map(
@@ -60,6 +55,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
+
                   <BsLinkedin />
                 </a>
               </article>
@@ -69,6 +65,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
+
                   <BsGithub />
                 </a>
               </article>
@@ -78,6 +75,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
+                  
                   <BsTwitter />
                 </a>
               </article>
